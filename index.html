@@ -1,13 +1,107 @@
 <html>
 <head>
   
+
+  
+<style type="text/css">
+* {
+ margin: 0;
+ padding: 0;
+}
+#tabs {
+ font-size: 90%;
+ margin: 20px ;
+}
+#tabs ul {
+ float:right;
+ background: #fff;
+ width: 500px;
+ padding-top: 4px;
+}
+#tabs li {
+ margin-right: 8px;
+ list-style: none;
+}
+* html #tabs li {
+ display: inline;
+}
+#tabs li, #tabs li a {
+ float: right;
+}
+#tabs ul li.active {
+ border-top:2px #CCCCCC solid;
+ background: #CCCCCC;
+}
+#tabs ul li.active a {
+ color: #333333;
+}
+#tabs div {
+ background: #E6E6E6;
+ clear: both;
+ padding: 15px ;
+ min-height: 200px;
+}
+#tabs div h3 {
+ margin-bottom: 12px;
+}
+#tabs div p {
+ line-height: 150%;
+     
+}
+#tabs ul li a {
+ text-decoration: none;
+ padding: 8px;
+ color: #000;
+ font-weight: bold;
+}
+
+-->
+</style>
+<script type="text/javascript">
+
+$(document).ready(function(){
+$('#tabs div').hide();
+$('#tabs div:first').show();
+$('#tabs ul li:first').addClass('active');
+$('#tabs ul li a').click(function(){ 
+$('#tabs ul li').removeClass('active');
+$(this).parent().addClass('active'); 
+var currentTab = $(this).attr('href'); 
+$('#tabs div').hide();
+$(currentTab).show();
+return false;
+});
+});
+</script>
+  
+  
   
 <script src='https://dl.dropboxusercontent.com/s/xr6y8hvwu9byhfn/player.js' type='text/javascript'/>
 
 </head>
   <body>
-<audio id='Au-Player' controls>
-  <source src="https://archive.org/download/hijab-albane/1.mp3">
-</audio>
+
+
+
+
+مختارات من الأذان 01
+
+<img border="0" src="https://4.bp.blogspot.com/--17OOQSzuVc/WBZ2jdCl9HI/AAAAAAAAKis/R4SSmFpUGiYKotHeEDgBNs_fztUkZpoiQCPcB/s1600/%25D8%25A3%25D9%2585%25D8%25A7%25D9%2586%25D9%258A%2B%25D8%25A7%25D9%2584%25D9%2586%25D8%25A7%25D8%25B3%2B%25D9%2581%25D9%258A%2B%25D8%25A7%25D9%2584%25D8%25AF%25D9%2586%25D9%258A%25D8%25A7%2B%25D9%2588%2B%25D8%25A7%25D9%2584%25D8%25A2%25D8%25AE%25D8%25B1%25D8%25A9.png" /><br />
+<a href="http://a.top4top.net/m_304gn3sy1.mp3">أماني الناس في الدنيا و الآخرة - الشيخ د. رضا بوشامة حفظه الله</a><br />
+<!--more--><a href="http://www.masjid-elwiam.org/media/mp3/khotab/khotba-159-(20-11-2015).mp3">أماني الناس في الدنيا و الآخرة - الشيخ د. رضا بوشامة حفظه الله</a><br />
+<a href="http://d.top4top.net/m_269yjpw1.mp3"> أدهم الشرقاوى</a><br />
+<a href="http://b.top4top.net/m_269obde1.mp3">محمد الدمرداش</a><br />
+<a href="http://d.top4top.net/m_269ht8j1.mp3">إسماعيل الشيخ</a><br />
+<a href="http://e.top4top.net/m_2693qb01.mp3"> محمد أبو المكارم</a><br />
+
+روابط اضافية
+
+<a href="http://audio3.islamweb.net/adan/456572.mp3">رابح بن دراح الجزائري</a><br />
+<a href="http://audio3.islamweb.net/adan/457131.mp3"> أحمد الكوردي</a><br />
+<a href="http://audio3.islamweb.net/adan/457296.mp3"> أدهم الشرقاوى</a><br />
+<a href="http://audio3.islamweb.net/adan/253116.mp3">محمد الدمرداش</a><br />
+<a href="http://audio3.islamweb.net/adan/253278.mp3">إسماعيل الشيخ</a><br />
+<a href="http://audio3.islamweb.net/adan/253572.mp3"> محمد أبو المكارم</a><br />
+
  </body>
 </html>
